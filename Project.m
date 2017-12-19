@@ -347,9 +347,7 @@ ylabel('|H(\omega )|');
 
 
 %% Q2 g
-% Displaying the table, the following image is generated
-%
-% <<table.png>>
+% The ripples can be found by using the max function on a filter and its complement
 
 %get the complement filter to get the stopband ripple
 h2 = [zeros(1, (length(h)-1)/2),1,zeros(1, (length(h)-1)/2)] - h;
